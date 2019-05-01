@@ -1,0 +1,23 @@
+version: '3'
+      
+services:
+
+  php:
+    build: ./slug
+    container_name: slug
+    volumes:
+     - ./slug/www:/var/www/html
+     - ./slug/sample:/slug
+    ports: 
+     - "9000"
+     - "9011"
+  nginx:
+    build: ./nginx
+    container_name: slug_nginx
+    ports:
+     - "9082:9082"
+    depends_on:
+     - php
+    links:
+     - php
+     
