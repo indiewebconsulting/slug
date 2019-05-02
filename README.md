@@ -1,6 +1,8 @@
 # SLUG
 Service Levels Under Guest: RESTful routing access to execute Linux shell scripts
 
+![Service Levels Under Guest](https://github.com/indiewebconsulting/slug/blob/master/B52EBEB8-F90D-4CE5-9929-070352670638.png)
+
 ## Note: Both of the DockerHub images, SLUG PHP (bistormllc/slug:latest) and SLUG NGINX (bistormllc/slug:nginx) are built from Dockerfiles contained in this repository.  You can modify these Dockerfile build instructions to copy your scripts into the Alpine-based Docker image during a build.  Use these images to run your own customized SLUG service environment, without the need to copy your scripts from another location.
 
 ## Use Cases
